@@ -1,0 +1,21 @@
+{
+  "name": "Tab Timer",
+  "description": "Get notified for tab timing",
+  "version": "1.0",
+  "manifest_version": 2,
+  "permissions": ["alarms", "notifications", "storage" , "activeTab"],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "browser_action": {
+    "default_title": "Tab Time Check",
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "16": "tt-16.png",
+    "32": "tt-32.png",
+    "48": "tt-48.png",
+    "128": "tt-128.png"
+  }
+}
